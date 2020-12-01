@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30626.31
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnilBot.Client", "SnilBot.Client\SnilBot.Client.csproj", "{48EE0D8C-71E6-4AFC-BFD8-3D0BD1E79467}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9834BEF0-5D57-4212-8C84-86BCE27E0A90} = {9834BEF0-5D57-4212-8C84-86BCE27E0A90}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventHorizon.Blazor.BabylonJS.WASM", "EventHorizon.Blazor.BabylonJS.WASM\EventHorizon.Blazor.BabylonJS.WASM.csproj", "{9834BEF0-5D57-4212-8C84-86BCE27E0A90}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnilBot.Server", "SnilBot.Server\SnilBot.Server.csproj", "{68C57E61-31E2-46C9-B24C-1ACA2E5F68B5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnilBot.Shared", "SnilBot.Shared\SnilBot.Shared.csproj", "{EF675604-DF84-43C1-A5B5-3EE01AD8D34C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48EE0D8C-71E6-4AFC-BFD8-3D0BD1E79467}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48EE0D8C-71E6-4AFC-BFD8-3D0BD1E79467}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48EE0D8C-71E6-4AFC-BFD8-3D0BD1E79467}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48EE0D8C-71E6-4AFC-BFD8-3D0BD1E79467}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9834BEF0-5D57-4212-8C84-86BCE27E0A90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9834BEF0-5D57-4212-8C84-86BCE27E0A90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9834BEF0-5D57-4212-8C84-86BCE27E0A90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9834BEF0-5D57-4212-8C84-86BCE27E0A90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68C57E61-31E2-46C9-B24C-1ACA2E5F68B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68C57E61-31E2-46C9-B24C-1ACA2E5F68B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68C57E61-31E2-46C9-B24C-1ACA2E5F68B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68C57E61-31E2-46C9-B24C-1ACA2E5F68B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF675604-DF84-43C1-A5B5-3EE01AD8D34C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF675604-DF84-43C1-A5B5-3EE01AD8D34C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF675604-DF84-43C1-A5B5-3EE01AD8D34C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF675604-DF84-43C1-A5B5-3EE01AD8D34C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1734D387-6979-4350-86F4-96C5BECA26CD}
+	EndGlobalSection
+EndGlobal

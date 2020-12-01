@@ -1,0 +1,86 @@
+﻿
+
+<div class="aaa">C# Code</div>
+<MonacoEditor CssClass="asd" @ref="_editor" Id="sample-code-editor-123" ConstructionOptions="EditorConstructionOptions" />
+<button class="bt" @onclick="() => Start()">Отправить</button>
+
+
+<LogicComponent></LogicComponent>
+
+@code { 
+
+            public string stringCode { get; set; }
+
+            private MonacoEditor _editor { get; set; }
+
+            private StandaloneEditorConstructionOptions EditorConstructionOptions(MonacoEditor editor)
+            {
+                return new StandaloneEditorConstructionOptions
+                {
+                    Language = "csharp",
+                    Value = "void Start(){\n" +
+                "" + "\n" +
+                "    //Code" + "\n" + "\n" +
+                "}" + "\n" +
+                "\n" +
+                "Start();",
+                    Theme = "vs-dark"
+                };
+            }
+
+            private async Task ChangeTheme(ChangeEventArgs e)
+            {
+                Console.WriteLine($"setting theme to: {e.Value.ToString()}");
+                await MonacoEditor.SetTheme(e.Value.ToString());
+            } }
+
+
+
+
+
+
+
+<style>
+
+    .asd {
+        position: absolute;
+        left: 1455px;
+        top: 145px;
+        height: 437px;
+        width: 380px;
+        border: 1px solid gray;
+    }
+
+    textarea:focus, button:focus {
+        outline: none;
+    }
+
+    .aaa {
+        padding: 20px 0;
+        position: absolute;
+        text-align: center;
+        left: 1455px;
+        top: 78px;
+        width: 380px;
+        font-family: 'Source Code Pro', monospace;
+        background-color: rgb(32,32,32);
+        color: rgb(248,248,248);
+        border: 1px solid gray;
+    }
+
+    .bt {
+        position: absolute;
+        left: 1455px;
+        top: 581px;
+        border-radius: 10px;
+        background-color: rgb(24,24,24);
+        color: rgb(248,248,248);
+        font-family: 'Source Code Pro', monospace;
+        width: 380px;
+        padding: 15px 0;
+        border: none;
+        border: 1px solid gray;
+    }
+</style>
+
+
