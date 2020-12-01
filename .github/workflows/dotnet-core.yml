@@ -13,7 +13,13 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.100
-    - name: Install dependencies
-      run: dotnet restore
-    - name: Build
-      run: dotnet build SnilBot.Client/SnilBot.Client.csproj --configuration Release --no-restore
+    # publishes Blazor project to the release-folder
+    - name: Publish .NET Core Project
+      run: dotnet publish SnilBot.Client/SnilBot.Client.csproj -c Release -o release --nologo
+    
+    - name: Commit wwwroot to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@3.5.9
+      with:
+        GITHUB_TOKEN: ${{ 3d3410ebddc3ffd9756e8455c2d0ba1997bb66ef }}
+        BRANCH: gh-pages
+        FOLDER: release/wwwroot
