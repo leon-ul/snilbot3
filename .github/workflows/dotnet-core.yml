@@ -14,7 +14,7 @@ jobs:
       with:
         dotnet-version: 5.0.100
     # publishes Blazor project to the release-folder
-    - name: Publish .NET Core Project
+    - name: Publish .NET Core 5.0.100
       run: dotnet publish SnilBot.Client/SnilBot.Client.csproj -c Release -o release --nologo
     
     - name: Commit wwwroot to GitHub Pages
