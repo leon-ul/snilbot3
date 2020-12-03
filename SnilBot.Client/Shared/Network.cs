@@ -15,7 +15,7 @@ namespace SnilBot.Client.Shared
         public Network()
         {
             hubConnection = new HubConnectionBuilder()
-            .WithUrl($"http://194.1.236.136:5000/userhub{UserHubConstans.HubConnectedString}")
+            .WithUrl($"//194.1.236.136:5000/userhub{UserHubConstans.HubConnectedString}")
             .Build();
             hubConnection.StartAsync();
         }
