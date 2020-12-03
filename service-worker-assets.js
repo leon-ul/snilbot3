@@ -2337,7 +2337,7 @@
       "url": "_framework\/SnilBot.Shared.dll"
     },
     {
-      "hash": "sha256-lQYlk3aNlS176Yv+BnPPIGFuyTZIWk9lhb027F5JZac=",
+      "hash": "sha256-6SBQYWk6SfptNtCe1nVSFWXhLmxPlW2yenbI5TCPxL0=",
       "url": "_framework\/SnilBot.Client.dll"
     },
     {
@@ -2449,7 +2449,7 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-8FrCdFBmGiydTYcHfurjKpuOZSFiuIXrCW+d2wLg97Q=",
+      "hash": "sha256-hcOiBs\/Erlu1P\/tqUVazUiRdDPcUJDwMbLzrnfE1tks=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -2457,5 +2457,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "PF6CD09O"
+  "version": "var14Ytd"
 };
